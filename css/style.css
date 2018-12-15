@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+header{
+	background-image: url('https://images.wallpaperscraft.com/image/architecture_city_view_from_above_buildings_river_118446_1366x768.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 700px
+	;
+	font-family: 'Quicksand';
+}
+
+.conheca{
+	background: linear-gradient(-10deg,#0a0a0a,#0a0a0a,#050505)!important;
+	font-family: 'Quicksand';
+}
+
+.grids-site{
+	padding-top: 100px;
+	display: grid;
+	grid-template: 
+	"info"
+	"ver-mais"
+	;
+	grid-template-columns: 80vh auto;
+}
+
+.contato1{
+	background: #111111;
+	background-color: rgba(17,17,17,0.6);
+}
+
+.info{
+	grid-area: info;
+}
+
+.ver-mais{
+	font-size: 40px;
+	text-decoration: none !important;
+}
+
+#conheca-{
+	transition: 17s;
+}
+
+.icon-bot{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.item-f{
+	background:  rgba(0, 0, 0, 0) !important;
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+.btn-contato{
+	border: solid 1px white !important;
+	border-radius: 5px;
+}
+
+.btn-contato:hover{
+	box-shadow: 1px 1px 1px 1px white;
+	text-shadow: 1px white;
+}
+
+.img-thumb{
+	margin: 40px;
+	height: 200px;
+}
+
+.thumbs{
+	display: grid;
+	grid-template: 
+	"thumb1 thumb2 thumb3"
+	;
+	grid-gap: 25px;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footerbs{
+	background-image: url('https://images.wallpaperscraft.com/image/architecture_city_view_from_above_buildings_river_118446_1366x768.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100px
+	;
+	font-family: 'Quicksand';
+}
+
+.footerms{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgba(17,17,17,0.6)!important;
+}
+
+.divfine{
+	background-color: rgba(17,17,17,0.6)!important;
+}
+@media(max-width: 990px){
+	.thumbs{
+		grid-template: 
+		"thumb1"
+		"thumb2"
+		"thumb3"
+		;
+	}
+}
+
+
+@media(max-width:767px){
+	.grids-site{
+		grid-template: 
+		"info"
+		"contato"
+		;
+	padding-top: 0px;
+	}
+}
